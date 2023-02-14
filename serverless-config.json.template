@@ -1,0 +1,5 @@
+{
+    "region": "us-east-1",
+    "OPENAI_API_KEY": "<OPENAI-KEY>",
+    "OPENAI_ORGANIZATION_KEY": "<OPENAI_ORGANIZATION_KEY>"
+}

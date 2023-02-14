@@ -1,0 +1,22 @@
+{
+  "name": "ai-trade-ideas-youtube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^3.1.0",
+    "youtube-captions-scraper": "^2.0.0",
+    "http-status-codes": "^2.2.0",
+    "http-errors": "^2.0.0",
+    "@middy/core": "^4.2.4",
+    "@middy/http-json-body-parser": "^4.2.4",
+    "@middy/http-error-handler": "^4.2.4",
+    "@middy/http-event-normalizer": "^4.2.4"
+  }
+}

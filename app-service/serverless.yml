@@ -1,0 +1,19 @@
+service: AITradeIdeasYoutube
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  createIdeaYoutube:
+    handler: index.handler
+    timeout: 26
+    environment:
+      OPENAI_API_KEY: ${file(../serverless-config.json):OPENAI_API_KEY}
+      OPENAI_ORGANIZATION_KEY: ${file(../serverless-config.json):OPENAI_ORGANIZATION_KEY}
+    events:
+      - http:
+          path: /youtube
+          method: get
+          cors: true
